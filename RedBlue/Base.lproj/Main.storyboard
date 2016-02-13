@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RedBlue" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="33962-NZR0QR" translatesAutoresizingMaskIntoConstraints="NO" id="gKw-zS-Uwu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue_Button" translatesAutoresizingMaskIntoConstraints="NO" id="ELy-oe-SVx">
+                                <rect key="frame" x="67" y="60" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Red_Button" translatesAutoresizingMaskIntoConstraints="NO" id="AJs-K8-R6y">
+                                <rect key="frame" x="67" y="165" width="246" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18O-I4-bij">
+                                <rect key="frame" x="102" y="532" width="171" height="30"/>
+                                <state key="normal" title="Hide Red Image"/>
+                                <connections>
+                                    <action selector="hideTheRedImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnR-YX-9L5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-N7-PPh">
+                                <rect key="frame" x="84" y="485" width="207" height="30"/>
+                                <state key="normal" title="Hide Blue Image"/>
+                                <connections>
+                                    <action selector="hideTheBlueImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uw1-2S-wVX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueImage" destination="ELy-oe-SVx" id="raP-IC-n9Y"/>
+                        <outlet property="redImage" destination="AJs-K8-R6y" id="4Zy-dm-JYx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="429.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="33962-NZR0QR" width="1667" height="1667"/>
+        <image name="Blue_Button" width="586" height="172"/>
+        <image name="Red_Button" width="614" height="192"/>
+    </resources>
+</document>
