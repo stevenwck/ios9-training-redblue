@@ -28,16 +28,16 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18O-I4-bij">
                                 <rect key="frame" x="102" y="532" width="171" height="30"/>
-                                <state key="normal" title="Hide Red Image"/>
+                                <state key="normal" title="Hide the Red Image"/>
                                 <connections>
-                                    <action selector="hideTheRedImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CnR-YX-9L5"/>
+                                    <action selector="toggleTheRedImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCl-29-d6m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-N7-PPh">
                                 <rect key="frame" x="84" y="485" width="207" height="30"/>
-                                <state key="normal" title="Hide Blue Image"/>
+                                <state key="normal" title="Hide the Blue Image"/>
                                 <connections>
-                                    <action selector="hideTheBlueImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uw1-2S-wVX"/>
+                                    <action selector="toggleTheBlueImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZPp-Pi-hnr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,6 +47,8 @@
                     <connections>
                         <outlet property="blueImage" destination="ELy-oe-SVx" id="raP-IC-n9Y"/>
                         <outlet property="redImage" destination="AJs-K8-R6y" id="4Zy-dm-JYx"/>
+                        <outlet property="toggleBlueImgBtn" destination="NfT-N7-PPh" id="fHu-8h-BT5"/>
+                        <outlet property="toggleRedImageBtn" destination="18O-I4-bij" id="BVP-va-L7I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
